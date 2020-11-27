@@ -1,24 +1,25 @@
 {
   "manifest_version": 2,
-  "name": "Simple New Tab URL",
-  "short_name": "New Tab URL",
-  "description": "Simply set the URL you want new tabs to load and it'll load it. No fluff.",
+  "name": "New Tab HTML",
+  "short_name": "New Tab HTML",
+  "description": "Customize the contents of your new tab page with HTML.",
   "version": "1.0.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "homepage_url": "https://github.com/zach-adams/simple-new-tab-url",
+  "homepage_url": "https://github.com/kmgb/simple-new-tab-url",
   "minimum_chrome_version": "26.0.1428",
   "options_page": "options.html",
   "chrome_url_overrides": {
-    "newtab": "redirect.html"
+    "newtab": "newtab.html"
   },
   "permissions": [
     "storage",
-    "file:///*"
+    "chrome://favicon/"
   ],
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src chrome://favicon;",
   "web_accessible_resources": [
     "blank.html"
   ]

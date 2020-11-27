@@ -21,15 +21,23 @@
             display: inline-block;
             min-width:200px;
         }
+
+        textarea {
+            min-width:80ch;
+            height:5em;
+            display:block;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Simple New Tab URL Options</h1>
+    <h1>New Tab HTML Options</h1>
     <p>
-        <label for="url">
-            New Tab URL: <input type="text" id="url" name="url" autofocus/>
+        <label for="url">New tab HTML:<br>
+            <textarea name="url" id="url" autofocus></textarea>
         </label>
+
+
     </p>
     <p>
         <label for="sync">
@@ -37,12 +45,11 @@
         </label>
     </p>
     <p>
-        <em>Please report any issues on this project's <a href="https://github.com/zach-adams/simple-new-tab-url">Github repo</a></em>
+        <em>Please report any issues on this project's <a href="https://github.com/kmgb/simple-new-tab-url">Github repo</a></em>
     </p>
     <p>
         <code>
             Version <span id="version"></span><br>
-            Icon "redo" by Mohamed Riyaz Ali <a href="https://thenounproject.com/term/redo/1175677/" target="_blank">from the Noun Project</a>
         </code>
     </p>
 </body>
