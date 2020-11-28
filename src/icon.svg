@@ -1,7 +1,16 @@
- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="700.000000pt" height="700.000000pt" viewBox="0 0 700.000000 700.000000" preserveAspectRatio="xMidYMid meet">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="700.000000pt" height="700.000000pt" viewBox="0 0 700.000000 700.000000" preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.12, written by Peter Selinger 2001-2015
 </metadata>
+
+<style>
+@media (prefers-color-scheme: dark) {
+    g{
+        fill: #ffffff;
+    }
+}
+</style>
+
 <g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
 <path d="M4643 6515 c-102 -22 -156 -60 -198 -137 -28 -51 -29 -60 -37 -248
 -5 -117 -14 -216 -23 -247 -30 -104 -124 -190 -230 -211 -43 -9 -500 -12
@@ -15,12 +24,4 @@ Created by potrace 1.12, written by Peter Selinger 2001-2015
 1619 4 1697 21 1742 28 71 95 140 169 174 l63 29 1907 0 c1049 0 1910 4 1915
 9 4 4 118 5 253 1 135 -4 553 -8 930 -10z"></path>
 </g>
-
-<style>
-@media (prefers-color-scheme: dark) {
-    g{
-        fill:#fff;
-    }
-}
-</style>
 </svg>

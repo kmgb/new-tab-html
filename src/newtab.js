@@ -14,3 +14,11 @@ function loadContent() {
 }
 
 document.body.onload = loadContent;
+
+if (window.matchMedia) {
+	window.matchMedia('(prefers-color-scheme: dark)')
+      	.addEventListener('change', event => {
+			// Hot-reload our SVG file, since Chromium doesn't yet inform it
+			location.reload();
+		});
+}
