@@ -13,12 +13,22 @@ function loadContent() {
 	});
 }
 
-document.body.onload = loadContent;
+loadContent();
+
+let favicon = document.getElementById('favicon');
 
 if (window.matchMedia) {
-	window.matchMedia('(prefers-color-scheme: dark)')
-      	.addEventListener('change', event => {
-			// Hot-reload our SVG file, since Chromium doesn't yet inform it
-			location.reload();
-		});
+	let mediaql = window.matchMedia('(prefers-color-scheme: dark)');
+
+	if (mediaql.matches) {
+		// Dark mode
+		favicon.href = './icon16.png';
+	}
+	else {
+		favicon.href = './icon16-dark.png';
+	}
+
+    mediaql.addEventListener('change', event => {
+		location.reload();
+	});
 }
