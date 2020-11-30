@@ -14,12 +14,12 @@ Below is some starting code for your own custom New tab page:
 ```html
 <style>
 body {
-    display: grid;
+    display: flex;
     place-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0 auto;
-    grid-auto-flow: column;
-    max-width: 1080px;
+    max-width: 860px;
 }
 
 .topsite {
@@ -32,11 +32,11 @@ body {
     width: 75px;
 }
 
-.topsite:hover {
+.topsite:hover{
     background: #dddddd22;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -46,6 +46,7 @@ img {
     height: 32px;
 }
 </style>
+
 
 <a href="https://youtube.com">
     <div class="topsite">
