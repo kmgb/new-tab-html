@@ -2,6 +2,7 @@
 
 This is a fork of https://github.com/zach-adams/simple-new-tab-url, allowing for custom HTML to be inserted into the New tab page instead of redirecting to a webpage. It allows for absolute customization of the new tab page while still having the address bar highlighted.    
 
+# Installation
 This will not be posted to online extension stores due to the potential of Javascript attacks on inexperienced users.   
 You may install it manually through the following steps:
 1. Clone to your machine
@@ -89,3 +90,8 @@ img {
         <div>Wired</div>
     </div>
 </a>
+```
+
+# Known issues
+## Chrome/Edge will request you to "disable developer extensions" on restart
+There isn't really a way to fix this without messing with group policies, and is there for security reasons. Although annoying, this warns users of a potential malware extension installed on their system.
