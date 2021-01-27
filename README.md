@@ -2,6 +2,8 @@
 
 This is a fork of https://github.com/zach-adams/simple-new-tab-url, allowing for custom HTML to be inserted into the New tab page instead of redirecting to a webpage. It allows for absolute customization of the new tab page while still having the address bar highlighted.    
 
+I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
+
 # Installation
 This will not be posted to online extension stores due to the potential of Javascript attacks on inexperienced users.   
 You may install it manually through the following steps:
@@ -94,4 +96,5 @@ img {
 
 # Known issues
 ## Chrome/Edge will request you to "disable developer extensions" on restart
+**Brave does not have this annoying popup (as of 2021-01-27)**  
 There isn't really a way to fix this without messing with group policies, and is there for security reasons. Although annoying, this warns users of a potential malware extension installed on their system.
