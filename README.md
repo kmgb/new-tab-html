@@ -22,7 +22,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0 auto;
-    max-width: 860px;
+    max-width: 1080px;
 }
 
 .topsite {
@@ -53,42 +53,42 @@ img {
 
 <a href="https://youtube.com">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://youtube.com"/>
+        <img src="chrome://favicon/size/32@1x/https://youtube.com"/>
         <div>YouTube</div>
     </div>
 </a>
 
 <a href="https://github.com">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://github.com"/>
+        <img src="chrome://favicon/size/32@1x/https://github.com"/>
         <div>GitHub</div>
     </div>
 </a>
 
 <a href="https://twitch.tv">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://twitch.tv"/>
+        <img src="chrome://favicon/size/32@1x/https://twitch.tv"/>
         <div>Twitch</div>
     </div>
 </a>
 
 <a href="https://messenger.com">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://messenger.com"/>
+        <img src="chrome://favicon/size/32@1x/https://messenger.com"/>
         <div>Messenger</div>
     </div>
 </a>
 
 <a href="https://arstechnica.com">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://arstechnica.com"/>
+        <img src="chrome://favicon/size/32@1x/https://arstechnica.com"/>
         <div>Ars Technica</div>
     </div>
 </a>
 
 <a href="https://wired.com">
     <div class="topsite">
-        <img src="chrome://favicon/size/64@0.5x/https://wired.com"/>
+        <img src="chrome://favicon/size/32@1x/https://wired.com"/>
         <div>Wired</div>
     </div>
 </a>
