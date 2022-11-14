@@ -5,6 +5,7 @@ This is a fork of https://github.com/zach-adams/simple-new-tab-url, allowing for
 I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
 
 # Installation
+## Chrome / Brave / Edge
 This will not be posted to online extension stores due to the potential of Javascript attacks on inexperienced users.   
 You may install it manually through the following steps:
 1. Clone to your machine
@@ -13,6 +14,17 @@ You may install it manually through the following steps:
 4. "Load unpacked" pointing to the "src" directory of your cloned copy
 5. Enjoy!
 
+## Firefox
+1. Clone to your machine
+2. Open about:debugging#/runtime/this-firefox
+3. Click "Load temporary add-on"
+4. Locate and open the manifest.json file to load the extension
+5. Enjoy :)
+
+**NOTE**: Firefox doesn't support chrome://favicon images, you'll need to add base64-encoded images instead in the following code example.  
+ie. `<img src="data:image/png;base64,iVBORw0K...">`
+
+# HTML Example
 Below is some starting code for your own custom New tab page:
 ```html
 <style>
@@ -23,6 +35,9 @@ body {
     height: 100vh;
     margin: 0 auto;
     max-width: 1080px;
+
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
 }
 
 .topsite {
@@ -35,7 +50,7 @@ body {
     width: 75px;
 }
 
-.topsite:hover{
+.topsite:hover {
     background: #dddddd22;
 }
 
