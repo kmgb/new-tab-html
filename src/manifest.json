@@ -5,13 +5,20 @@
   "description": "Customize the contents of your new tab page with HTML.",
   "version": "1.0.0",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
   },
   "homepage_url": "https://github.com/kmgb/simple-new-tab-url",
   "minimum_chrome_version": "26.0.1428",
-  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newtabhtml@kmgb.github.io"
+    }
+  },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
@@ -19,5 +26,5 @@
     "storage",
     "chrome://favicon/"
   ],
-  "content_security_policy": "script-src 'self'; object-src 'self'; img-src chrome://favicon;"
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src chrome://favicon data:;"
 }
