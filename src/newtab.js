@@ -2,9 +2,9 @@
 function loadContent() {
 	// Security hazard from injecting arbitrary HTML into body? meh.
 
-	chrome.storage.local.get({'url': '', 'sync': true}, function(localstorage) {
+	browser.storage.local.get({'url': '', 'sync': true}).then(function(localstorage) {
 		if(localstorage.sync === true) {
-			chrome.storage.sync.get({'url':''}, function(syncedstorage) {
+			browser.storage.sync.get({'url':''}).then(function(syncedstorage) {
 				document.body.innerHTML = syncedstorage.url;
 			});
 		} else {
