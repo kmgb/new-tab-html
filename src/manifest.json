@@ -9,15 +9,10 @@
     "48": "icon.svg",
     "128": "icon.svg"
   },
-  "homepage_url": "https://github.com/kmgb/simple-new-tab-url",
+  "homepage_url": "https://github.com/kmgb/new-tab-html",
   "minimum_chrome_version": "26.0.1428",
   "options_ui": {
     "page": "options.html"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "newtabhtml@kmgb.github.io"
-    }
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
