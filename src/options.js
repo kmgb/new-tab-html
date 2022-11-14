@@ -19,30 +19,30 @@ function sntu_init() {
 
 
 
-	let url_input_el = document.getElementById('url');
+	let data_input_el = document.getElementById('data');
 	let sync_input_el = document.getElementById('sync');
 	let sync_enabled = true;
 
-	chrome.storage.local.get({'url': '', 'sync': true}, function(local_results) {
-		url_input_el.value = local_results.url;
+	chrome.storage.local.get({'data': '', 'sync': true}, function(local_results) {
+		data_input_el.value = local_results.data;
 		sync_enabled = local_results.sync;
 		sync_input_el.checked = local_results.sync;
 		if(sync_enabled) {
-			chrome.storage.sync.get({'url': ''}, function(syncstorage) {
-				if(syncstorage.url !== '') {
-					url_input_el.value = syncstorage.url;
+			chrome.storage.sync.get({'data': ''}, function(syncstorage) {
+				if(syncstorage.data !== '') {
+					data_input_el.value = syncstorage.data;
 				}
 			});
 		}
 	});
 
-	function sntu_keyup_save_url(event) {
-		chrome.storage.local.set({'url': event.target.value});
+	function sntu_keyup_save_data(event) {
+		chrome.storage.local.set({'data': event.target.value});
 		if(sync_enabled) {
-			chrome.storage.sync.set({'url': event.target.value});
+			chrome.storage.sync.set({'data': event.target.value});
 		}
 	}
-	url_input_el.addEventListener('keyup', key_delay(sntu_keyup_save_url, 200));
+	data_input_el.addEventListener('keyup', key_delay(sntu_keyup_save_data, 200));
 
 	function sntu_save_sync_setting(event) {
 		chrome.storage.local.set({'sync': event.target.checked });
@@ -53,10 +53,10 @@ function sntu_init() {
 	window.addEventListener("beforeunload", function(e){
 		chrome.storage.local.set({
 			'sync': sync_input_el.checked,
-			'url': url_input_el.value
+			'data': data_input_el.value
 		});
 		if(sync_input_el.checked) {
-			chrome.storage.sync.set({ 'url': url_input_el.value });
+			chrome.storage.sync.set({ 'data': data_input_el.value });
 		}
 	}, false);
 

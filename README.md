@@ -1,6 +1,6 @@
 # New Tab HTML
 
-This add-on overrides the default new tab page, allowing for custom HTML to be used. It enables absolute customization of the new tab page while still having the address bar highlighted.    
+This add-on overrides the default new tab page, allowing for custom HTML to be used. It enables absolute customization of the new tab page while still having the address bar highlighted.  
 
 I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
 
@@ -8,7 +8,6 @@ Thanks to [Zach Adams](https://github.com/zach-adams) for the data storage synch
 
 # Installation
 ## Chrome / Brave / Edge
-This will not be posted to online extension stores due to the potential of Javascript attacks on inexperienced users.   
 You may install it manually through the following steps:
 1. Clone to your machine
 2. Open chrome://extensions
