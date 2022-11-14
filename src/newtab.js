@@ -14,21 +14,3 @@ function loadContent() {
 }
 
 loadContent();
-
-let favicon = document.getElementById('favicon');
-
-if (window.matchMedia) {
-	let mediaql = window.matchMedia('(prefers-color-scheme: dark)');
-
-	if (mediaql.matches) {
-		// Dark mode
-		favicon.href = './icon16.png';
-	}
-	else {
-		favicon.href = './icon16-dark.png';
-	}
-
-    mediaql.addEventListener('change', event => {
-		location.reload();
-	});
-}

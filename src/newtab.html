@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icon16.png" id="favicon">
+    <link rel="icon" href="./icon.svg" id="favicon">
+    <!--For default Firefox logo new tab icon, use the following line instead-->
+    <!-- <link rel="icon" href="chrome://branding/content/icon32.png" id="favicon"> -->
     <title>New tab</title>
     <style>
         /* Basic styles for dark/light support */
@@ -22,6 +24,7 @@
             }
         }
     </style>
+    <script defer src="browser-polyfill.min.js"></script>
     <script defer src="newtab.js"></script>
 </head>
 <body>
