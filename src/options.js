@@ -1,3 +1,6 @@
+/* Credit: Zach Adams https://github.com/zach-adams/simple-new-tab-url
+ * Used with permission
+ */
 
 function key_delay(fn, ms) {
 	let timer = 0;

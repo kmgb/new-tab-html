@@ -1,8 +1,10 @@
 # New Tab HTML
 
-This is a fork of https://github.com/zach-adams/simple-new-tab-url, allowing for custom HTML to be inserted into the New tab page instead of redirecting to a webpage. It allows for absolute customization of the new tab page while still having the address bar highlighted.    
+This add-on overrides the default new tab page, allowing for custom HTML to be used. It enables absolute customization of the new tab page while still having the address bar highlighted.    
 
 I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
+
+Thanks to [Zach Adams](https://github.com/zach-adams) for the data storage synchronization code (options.js) – derived from their extension [Simple New Tab URL](https://github.com/zach-adams/simple-new-tab-url).
 
 # Installation
 ## Chrome / Brave / Edge
