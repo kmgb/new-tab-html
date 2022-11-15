@@ -5,6 +5,11 @@ This add-on overrides the default new tab page, allowing for custom HTML to be u
 
 Thanks to [Zach Adams](https://github.com/zach-adams) for the data storage synchronization code (options.js) – derived from their extension [Simple New Tab URL](https://github.com/zach-adams/simple-new-tab-url).
 
+---
+<a href="https://addons.mozilla.org/addon/new-tab-html/" rel="nofollow"><img src="https://user-images.githubusercontent.com/25809479/201961388-d7e0310f-23c5-4cd1-bc90-db1262712632.svg" width="172" alt="Get New Tab HTML extension for Firefox"></a>
+
+---
+
 # Installation
 ## Firefox
 1. Install the add-on from the [Firefox AMO](https://addons.mozilla.org/addon/new-tab-html/)
