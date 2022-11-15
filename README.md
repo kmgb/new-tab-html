@@ -2,28 +2,25 @@
 
 This add-on overrides the default new tab page, allowing for custom HTML to be used. It enables absolute customization of the new tab page while still having the address bar highlighted.  
 
-I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
 
 Thanks to [Zach Adams](https://github.com/zach-adams) for the data storage synchronization code (options.js) – derived from their extension [Simple New Tab URL](https://github.com/zach-adams/simple-new-tab-url).
 
 # Installation
+## Firefox
+1. Install the add-on from the [Firefox AMO](https://addons.mozilla.org/addon/new-tab-html/)
+2. Enjoy :)
+
+**NOTE**: See example-firefox.html for a good starting point for this browser. Firefox doesn't support chrome://favicon images, so you'll need to add base64-encoded images instead.
+ie. `<img src="data:image/png;base64,iVBORw0K...">`
+
 ## Chrome / Brave / Edge
+Of these three, I recommend using this with Brave, as it will not complain about developer extensions like Chrome/Edge do. (as of 2021-01-27)  
 You may install it manually through the following steps:
 1. Clone to your machine
 2. Open chrome://extensions
 3. Enable developer mode
 4. "Load unpacked" pointing to the "src" directory of your cloned copy
 5. Enjoy!
-
-## Firefox
-1. Clone to your machine
-2. Open about:debugging#/runtime/this-firefox
-3. Click "Load temporary add-on"
-4. Locate and open the manifest.json file to load the extension
-5. Enjoy :)
-
-**NOTE**: Firefox doesn't support chrome://favicon images, you'll need to add base64-encoded images instead in the following code example.  
-ie. `<img src="data:image/png;base64,iVBORw0K...">`
 
 # HTML Example
 Below is some starting code for your own custom New tab page:
