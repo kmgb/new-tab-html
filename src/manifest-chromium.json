@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "New Tab HTML",
   "short_name": "New Tab HTML",
   "description": "Customize the contents of your new tab page with HTML.",
@@ -20,5 +20,7 @@
   "permissions": [
     "storage"
   ],
-  "content_security_policy": "script-src 'self'; object-src 'self'; img-src data:;"
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src data:;"
+  }
 }
