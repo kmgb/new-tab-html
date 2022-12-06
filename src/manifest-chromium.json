@@ -15,7 +15,10 @@
     "page": "options.html"
   },
   "chrome_url_overrides": {
-    "newtab": "newtab.html"
+    "newtab": "newtab-chromium.html"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "newtab-chromium.html"
   },
   "permissions": [
     "storage"
