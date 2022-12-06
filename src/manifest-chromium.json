@@ -3,7 +3,7 @@
   "name": "New Tab HTML",
   "short_name": "New Tab HTML",
   "description": "Customize the contents of your new tab page with HTML.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "16": "icon.svg",
     "48": "icon.svg",
